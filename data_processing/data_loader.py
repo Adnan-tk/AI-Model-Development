@@ -1,10 +1,7 @@
 import pandas as pd
 import numpy as np
-from datasets import load_dataset
 import json
 import pickle
-import docx
-import PyPDF2
 from io import BytesIO
 import os
 import re
@@ -60,6 +57,7 @@ class DataLoader:
     def load_docx(self, file_path):
         """Load data from Word document"""
         try:
+            import docx
             doc = docx.Document(file_path)
             self.data = "\n".join([paragraph.text for paragraph in doc.paragraphs])
             return self.data
@@ -72,6 +70,7 @@ class DataLoader:
     def load_pdf(self, file_path):
         """Load data from PDF file"""
         try:
+            import PyPDF2
             text = ""
             with open(file_path, 'rb') as file:
                 pdf_reader = PyPDF2.PdfReader(file)
@@ -87,6 +86,13 @@ class DataLoader:
 
     def load_huggingface_dataset(self, dataset_name, split='train', **kwargs):
         """Load dataset from Hugging Face"""
+        try:
+            from datasets import load_dataset
+        except ImportError:
+            raise ImportError(
+                "Missing optional dependency 'datasets'. "
+                "Use pip or conda to install datasets."
+            )
         dataset = load_dataset(dataset_name, split=split, **kwargs)
         self.data = pd.DataFrame(dataset)
         return self.data
