@@ -1,0 +1,11 @@
+User: What is deep learning?
+AI: Deep learning is a subset of machine learning that uses multi-layered neural networks.
+
+User: How does a transformer model work?
+AI: Transformer models use self-attention mechanisms to process sequences of data.
+
+User: What is PyTorch?
+AI: PyTorch is an open-source machine learning library based on the Torch library.
+
+User: How to train a neural network?
+AI: Training a neural network involves forward propagation, calculating loss, and backpropagation.

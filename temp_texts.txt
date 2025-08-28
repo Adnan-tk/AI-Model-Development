@@ -1,0 +1,10 @@
+what is python? what is python?
+how do you print in python? how do you print in python?
+how do you create a variable in python? how do you create a variable in python?
+what is the difference between a list and a tuple? what is the difference between a list and a tuple?
+how do you write a comment in python? how do you write a comment in python?
+what data types are in python? what data types are in python?
+how do you check the type of a variable? how do you check the type of a variable?
+how do you take user input in python? how do you take user input in python?
+how do you define a function in python? how do you define a function in python?
+what is indentation in python? what is indentation in python?

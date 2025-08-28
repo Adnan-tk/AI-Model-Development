@@ -1,0 +1,11 @@
+Question,Answer
+What is Python?,"Python is a high-level, interpreted programming language used for general-purpose programming."
+How do you print in Python?,Using the print() function. Example: print('Hello World').
+How do you create a variable in Python?,Simply assign a value. Example: x = 10.
+What is the difference between a list and a tuple?,"Lists are mutable, tuples are immutable."
+How do you write a comment in Python?,Using the # symbol. Example: # This is a comment.
+What data types are in Python?,"Common types are int, float, str, list, tuple, dict, set, and bool."
+How do you check the type of a variable?,Using the type() function.
+How do you take user input in Python?,Using the input() function. Example: name = input('Enter your name: ').
+How do you define a function in Python?,"Using the def keyword. Example: def add(a, b): return a + b."
+What is indentation in Python?,Indentation is used to define code blocks instead of braces. It's required.

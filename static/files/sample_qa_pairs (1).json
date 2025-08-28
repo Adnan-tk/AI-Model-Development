@@ -1,0 +1,15 @@
+
+{
+  "conversations": [
+    {
+      "question": "What is artificial intelligence?",
+      "answer": "Artificial intelligence is the simulation of human intelligence processes by machines.",
+      "topic": "AI Basics"
+    },
+    {
+      "question": "How do I install Python?",
+      "answer": "You can download Python from python.org and follow the installation instructions.",
+      "topic": "Programming"
+    }
+  ]
+}
