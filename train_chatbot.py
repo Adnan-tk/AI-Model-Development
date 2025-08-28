@@ -123,11 +123,15 @@ class ChatbotTrainer:
 
         # Generate response
         with torch.no_grad():
+            pad_id = self.tokenizer.pad_token_id
+            if pad_id is None:
+                # Fallback to eos if pad is undefined
+                pad_id = self.tokenizer.eos_token_id
             output = self.model.generate(
                 input_ids,
                 max_length=max_length,
                 num_return_sequences=1,
-                pad_token_id=self.tokenizer.eos_token_id,
+                pad_token_id=pad_id,
                 temperature=0.7,
                 do_sample=True
             )
