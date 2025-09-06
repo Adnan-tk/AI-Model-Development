@@ -10,6 +10,7 @@ import os
 import re
 
 
+
 class DataLoader:
     def __init__(self, upload_folder="static/files"):
         self.data = None
