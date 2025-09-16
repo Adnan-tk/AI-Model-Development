@@ -2,6 +2,7 @@ import torch
 import numpy as np
 import random
 from torch.utils.data import DataLoader, TensorDataset
+""" to have to change the transformer.py file into """
 
 
 def set_seed(seed=42):
