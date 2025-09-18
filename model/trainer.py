@@ -6,8 +6,6 @@ from tqdm import tqdm
 import os
 from datetime import datetime
 
-
-
 class ChatbotTrainer:
     def __init__(self, model, vocab_size, learning_rate=0.0001, device=None):
         self.model = model
