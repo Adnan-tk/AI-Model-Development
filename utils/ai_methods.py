@@ -195,3 +195,4 @@ class AIMethodologyExplainer:
                 if method["title"] == method_option:
                     self.show_methodology_info(key)
                     break
+
