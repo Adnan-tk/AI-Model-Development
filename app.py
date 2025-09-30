@@ -1,4 +1,4 @@
-import streamlit as st
+mport streamlit as st
 import torch
 import numpy as np
 import os
@@ -12,6 +12,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
 
 # Try to import all dependencies with error handling
 try:
