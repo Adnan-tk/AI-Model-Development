@@ -34,12 +34,13 @@ class TextPreprocessor:
             for text in texts:
                 f.write(text + '\n')
 
-        # Train tokenizer - REMOVE <unk> from user_defined_symbols
+        # Train tokenizer - avoid duplicating special tokens in user_defined_symbols
         spm.SentencePieceTrainer.train(
             input='temp_texts.txt',
             model_prefix=model_prefix,
             vocab_size=vocab_size,
-            user_defined_symbols=['<pad>', '<s>', '</s>'],  # REMOVED <unk> from here
+            # Define only <pad> as user-defined; <s>, </s>, <unk> are controlled by *_id below
+            user_defined_symbols=['<pad>'],
             pad_id=0,
             unk_id=1,
             bos_id=2,
