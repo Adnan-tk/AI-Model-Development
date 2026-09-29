@@ -163,7 +163,7 @@ class ChatbotApp:
             if st.button("🔄 Clear All Files"):
                 st.session_state.uploaded_files = []
                 st.session_state.processed_data = None
-                st.experimental_rerun()
+                st.rerun()
 
         # Sample data download
         st.subheader("📋 Sample Data")
@@ -407,12 +407,12 @@ What is the largest ocean?,The Pacific Ocean is the largest ocean.,Geography
                 st.session_state.conversation.append(("ai", response))
 
                 # Rerun to update conversation
-                st.experimental_rerun()
+                st.rerun()
 
         with col2:
             if st.button("Clear Conversation"):
                 st.session_state.conversation = []
-                st.experimental_rerun()
+                st.rerun()
 
     def run(self):
         """Run the application"""
